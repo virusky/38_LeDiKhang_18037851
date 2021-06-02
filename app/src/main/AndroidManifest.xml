@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.38_18037851_LeDiKhang">
-        <activity android:name=".Add_product"></activity>
+        <activity android:name=".UpdateItem"></activity>
+        <activity android:name=".Add_product" />
         <activity android:name=".Show_info" />
         <activity android:name=".Manager" />
         <activity android:name=".MainActivity">
