@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "346425228632",
+    "project_id": "android-kiem-tra-thuc-hanh",
+    "storage_bucket": "android-kiem-tra-thuc-hanh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346425228632:android:041af9fb4acb3f1473f92d",
+        "android_client_info": {
+          "package_name": "iuh.edu.a38_18037851_ledikhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346425228632-ed2s25pg3j0j7r0an3jc79dgueotbcmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCNqiTk-Zw3VD6gOHsB2l8asegVjkIiNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346425228632-ed2s25pg3j0j7r0an3jc79dgueotbcmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
