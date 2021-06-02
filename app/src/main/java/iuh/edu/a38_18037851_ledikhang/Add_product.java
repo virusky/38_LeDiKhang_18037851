@@ -19,7 +19,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Add_product extends AppCompatActivity {
-    private Product product;
     private Button buttonCreate;
     private Button buttonBack;
 
