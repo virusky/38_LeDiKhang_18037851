@@ -1,6 +1,8 @@
 package iuh.edu.a38_18037851_ledikhang;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -52,17 +54,33 @@ public class ProductAdapter extends RecyclerView.Adapter<MyViewHolder>{
         holder.price.setText("Country" + product.getCountry());
 
         holder.buttonDelete.setOnClickListener( v -> {
-            StringRequest stringRequest = new StringRequest(Request.Method.DELETE, url + "/" + product.getId(),
-                    response -> {
-                        Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
-                        update();
-                    },
-                    error -> {
-                        error.printStackTrace();
-                    });
-            stringRequest.setRetryPolicy(new DefaultRetryPolicy(0, 1, 1));
-            RequestQueue queue = Volley.newRequestQueue(context);
-            queue.add(stringRequest);
+            new AlertDialog.Builder(context)
+                    .setTitle("Delete entry")
+                    .setMessage("Are you sure you want to delete this entry?")
+
+                    // Specifying a listener allows you to take an action before dismissing the dialog.
+                    // The dialog is automatically dismissed when a dialog button is clicked.
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // Continue with delete operation
+                            StringRequest stringRequest = new StringRequest(Request.Method.DELETE, url + "/" + product.getId(),
+                                    response -> {
+                                        Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
+                                        update();
+                                    },
+                                    error -> {
+                                        error.printStackTrace();
+                                    });
+                            stringRequest.setRetryPolicy(new DefaultRetryPolicy(0, 1, 1));
+                            RequestQueue queue = Volley.newRequestQueue(context);
+                            queue.add(stringRequest);
+                        }
+                    })
+
+                    // A null listener allows the button to dismiss the dialog and take no further action.
+                    .setNegativeButton(android.R.string.no, null)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .show();
         });
 
         holder.buttonUpdate.setOnClickListener( v -> {
