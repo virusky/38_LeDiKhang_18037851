@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="@+id/view" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnShow"
         android:layout_width="334dp"
         android:layout_height="56dp"
         android:layout_marginTop="84dp"
@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnAdd"
         android:layout_width="334dp"
         android:layout_height="56dp"
         android:layout_marginTop="72dp"
@@ -56,13 +56,13 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/btnShow"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/btnShow"
+        app:layout_constraintTop_toBottomOf="@+id/btnShow" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnLogout"
         android:layout_width="141dp"
         android:layout_height="61dp"
         android:layout_marginTop="84dp"
@@ -71,7 +71,7 @@
         android:textAlignment="center"
         android:textColor="#E3E3E3"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintEnd_toEndOf="@+id/btnAdd"
+        app:layout_constraintStart_toStartOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 </androidx.constraintlayout.widget.ConstraintLayout>
