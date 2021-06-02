@@ -51,7 +51,7 @@ public class ProductAdapter extends RecyclerView.Adapter<MyViewHolder>{
         holder.count.setText(String.valueOf(position+1));
         holder.type.setText("Type: " + product.getType());
         holder.price.setText("Price: " + product.getPrice() + "$");
-        holder.country.setText("Country" + product.getCountry());
+        holder.country.setText("Country: " + product.getCountry());
 
         holder.buttonDelete.setOnClickListener( v -> {
             new AlertDialog.Builder(context)

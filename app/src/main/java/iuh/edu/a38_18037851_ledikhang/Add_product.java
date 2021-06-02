@@ -33,12 +33,12 @@ public class Add_product extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
 
-        inputType = findViewById(R.id.txtTypeAdd);
-        inputPrice = findViewById(R.id.txtPriceAdd);
-        inputCountry = findViewById(R.id.txtCountryAdd);
+        inputType = findViewById(R.id.txtTypeUpdate);
+        inputPrice = findViewById(R.id.txtPriceUpdate);
+        inputCountry = findViewById(R.id.txtCountryUpdate);
 
-        buttonCreate = findViewById(R.id.btnCreate);
-        buttonBack = findViewById(R.id.btnBackAdd);
+        buttonCreate = findViewById(R.id.btnSave);
+        buttonBack = findViewById(R.id.btnBackUpdate);
 
         buttonBack.setOnClickListener(v -> {
             startActivity(new Intent(Add_product.this, Manager.class));

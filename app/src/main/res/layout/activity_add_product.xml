@@ -8,7 +8,7 @@
     tools:context=".Add_product">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView456"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtTypeAdd"
+        android:id="@+id/txtTypeUpdate"
         android:layout_width="326dp"
         android:layout_height="59dp"
         android:layout_marginStart="33dp"
@@ -40,10 +40,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView456" />
 
     <EditText
-        android:id="@+id/txtPriceAdd"
+        android:id="@+id/txtPriceUpdate"
         android:layout_width="326dp"
         android:layout_height="59dp"
         android:layout_marginTop="32dp"
@@ -55,12 +55,12 @@
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
         android:textColorHint="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/txtTypeAdd"
-        app:layout_constraintStart_toStartOf="@+id/txtTypeAdd"
-        app:layout_constraintTop_toBottomOf="@+id/txtTypeAdd" />
+        app:layout_constraintEnd_toEndOf="@+id/txtTypeUpdate"
+        app:layout_constraintStart_toStartOf="@+id/txtTypeUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/txtTypeUpdate" />
 
     <EditText
-        android:id="@+id/txtCountryAdd"
+        android:id="@+id/txtCountryUpdate"
         android:layout_width="326dp"
         android:layout_height="59dp"
         android:layout_marginTop="32dp"
@@ -72,12 +72,12 @@
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
         android:textColorHint="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/txtPriceAdd"
-        app:layout_constraintStart_toStartOf="@+id/txtPriceAdd"
-        app:layout_constraintTop_toBottomOf="@+id/txtPriceAdd" />
+        app:layout_constraintEnd_toEndOf="@+id/txtPriceUpdate"
+        app:layout_constraintStart_toStartOf="@+id/txtPriceUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/txtPriceUpdate" />
 
     <Button
-        android:id="@+id/btnCreate"
+        android:id="@+id/btnSave"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -85,13 +85,13 @@
         android:text="Create"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtCountryAdd"
+        app:layout_constraintEnd_toEndOf="@+id/txtCountryUpdate"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/txtCountryAdd"
-        app:layout_constraintTop_toBottomOf="@+id/txtCountryAdd" />
+        app:layout_constraintStart_toStartOf="@+id/txtCountryUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/txtCountryUpdate" />
 
     <Button
-        android:id="@+id/btnBackAdd"
+        android:id="@+id/btnBackUpdate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
@@ -99,8 +99,8 @@
         android:text="Back"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/btnCreate"
+        app:layout_constraintEnd_toEndOf="@+id/btnSave"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnCreate"
-        app:layout_constraintTop_toBottomOf="@+id/btnCreate" />
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave" />
 </androidx.constraintlayout.widget.ConstraintLayout>

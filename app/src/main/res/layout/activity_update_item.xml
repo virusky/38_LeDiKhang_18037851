@@ -7,4 +7,100 @@
     android:background="@drawable/background"
     tools:context=".UpdateItem">
 
+    <TextView
+        android:id="@+id/textView456"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Update product"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTypeUpdate"
+        android:layout_width="326dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_text"
+        android:drawableLeft="@drawable/ic_type"
+        android:drawablePadding="25dp"
+        android:ems="10"
+        android:hint="Type"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView456" />
+
+    <EditText
+        android:id="@+id/txtPriceUpdate"
+        android:layout_width="326dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_text"
+        android:drawableLeft="@drawable/ic_price"
+        android:drawablePadding="25dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/txtTypeUpdate"
+        app:layout_constraintStart_toStartOf="@+id/txtTypeUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/txtTypeUpdate" />
+
+    <EditText
+        android:id="@+id/txtCountryUpdate"
+        android:layout_width="326dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_text"
+        android:drawableLeft="@drawable/ic_country"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/txtPriceUpdate"
+        app:layout_constraintStart_toStartOf="@+id/txtPriceUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/txtPriceUpdate" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="#000000"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCountryUpdate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtCountryUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/txtCountryUpdate" />
+
+    <Button
+        android:id="@+id/btnBackUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:background="#000000"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSave"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave" />
 </androidx.constraintlayout.widget.ConstraintLayout>
